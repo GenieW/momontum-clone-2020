@@ -1,0 +1,38 @@
+.wrapper {
+  margin: 10px;
+  display: grid;
+  height: 97vh;
+  grid-template:
+    "first first first" 1fr
+    "lside second rside" 4fr
+    "lside third rside" 2fr
+    "lside fourth rside" 2fr
+    "lside fifth fifth" 1fr / 1fr 2fr 1fr;
+}
+
+.first-row {
+  grid-area: first;
+}
+.second-row {
+  grid-area: second;
+  justify-self: center;
+  align-self: flex-end;
+}
+.third-row {
+  grid-area: third;
+  justify-self: center;
+  align-self: center;
+}
+.fourth-row {
+  grid-area: fourth;
+}
+.fifth-row {
+  grid-area: fifth;
+}
+.left-side {
+  grid-area: lside;
+  align-self: flex-end;
+}
+.right-side {
+  grid-area: rside;
+}
